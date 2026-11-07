@@ -1,0 +1,37 @@
+{
+  "app": "model-observatory",
+  "mode": "evaluate",
+  "source": "Michaelhoang8/portfolio-lab",
+  "backend_definitions": {
+    "capabilities": [
+      "enrich",
+      "table"
+    ],
+    "data_apps": [
+      "parse",
+      "safe_csv"
+    ],
+    "ml_apps": [
+      "auc",
+      "evaluate",
+      "number",
+      "probability_metrics",
+      "threshold_metrics"
+    ],
+    "validation": [
+      "ConflictError",
+      "NotFoundError",
+      "ValidationError"
+    ],
+    "json_input": [
+      "decode",
+      "read_exact"
+    ],
+    "db": [
+      "SCHEMA",
+      "connect",
+      "initialize",
+      "rows"
+    ]
+  }
+}

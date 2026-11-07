@@ -1,0 +1,1 @@
+"""Model Observatory: standalone application."""

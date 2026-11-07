@@ -1,0 +1,6 @@
+{
+  "path": "/api/ml/evaluate",
+  "body": {
+    "csv": "actual,score\n0,0.1\n1,0.9\n0,0.8\n1,0.3\n"
+  }
+}
