@@ -85,7 +85,7 @@ window.analysisEmpty = function (mode) {
     secrets: ['Review text without exposing findings', 'Scan source text for credential patterns. Reports omit raw credential values.'],
     train: ['Train your first baseline', 'Load labeled numeric data to compare a classifier with a majority-class baseline.'],
     search: ['Find a passage worth reading', 'Add a document collection and a query to rank matching passages.'],
-    evaluate: ['Look beyond accuracy', 'Supply labels and prediction scores to explore errors and threshold tradeoffs.'],
+    evaluate: ['No evaluation', 'Load actual labels and prediction scores, then evaluate.'],
     manifest: ['Review before deployment', 'Load a Deployment manifest to inspect selected configuration policies.'],
     pipeline: ['Make the critical path visible', 'Define jobs and dependencies, then simulate their schedule with limited workers.'],
     reliability: ['Make your error budget concrete', 'Add hourly request counts and a reliability target to calculate budget consumption.']

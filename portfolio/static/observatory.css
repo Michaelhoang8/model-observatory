@@ -151,3 +151,43 @@ body[data-app] .panel .section-head a{color:var(--blue);font-size:12px;text-unde
 
 body[data-app] button.report-export{background:var(--surface);color:var(--ink);border:1px solid var(--line);border-radius:3px;padding:9px 13px;font:600 12px/1.5 Arial,sans-serif}
 body[data-app] button.report-export:hover:not(:disabled){background:var(--bg);border-color:var(--blue)}
+body[data-app=evaluate]{--bg:#101c26;--surface:#142430;--field:#10202b;--ink:#e1edf2;--muted:#a4b8c3;--line:#2c414d;--blue:#6ad1d0;background:var(--bg)}
+body[data-app=evaluate] main{max-width:1600px;padding:0 4%}
+body[data-app=evaluate] .workspace{display:grid;grid-template-columns:275px minmax(0,1fr);gap:30px;margin-top:28px;box-shadow:none}
+body[data-app=evaluate] .source{background:transparent;border:0;border-right:1px solid var(--line);padding:0 24px 0 0;border-radius:0}
+body[data-app=evaluate] .results{background:transparent;border:0;padding:0;min-width:0}
+body[data-app=evaluate] button{background:#172d3c;color:var(--ink);border-color:var(--line)}
+body[data-app=evaluate] .stats{margin:24px 0}
+body[data-app=evaluate] .stat{padding:0 20px}
+body[data-app=evaluate] .stat:first-child{padding-left:0}
+body[data-app=evaluate] .stat strong{font:38px/1.4 ui-monospace,monospace;letter-spacing:-2px}
+body[data-app=evaluate] .summary{background:none;color:var(--muted);padding:0;font-size:11px}
+body[data-app=evaluate] .threshold-plot{padding:22px 22px 14px;border:1px solid var(--line);border-radius:7px;background:radial-gradient(ellipse at 50% 30%,#1d3443,#142430);margin:22px 0}
+body[data-app=evaluate] .plot-label{display:flex;align-items:center;justify-content:space-between;gap:10px}
+body[data-app=evaluate] .plot-label h3{margin:0;font-size:14px}
+body[data-app=evaluate] .plot-label span{font-size:10px;color:var(--muted)}
+body[data-app=evaluate] .plot-label i{display:inline-block;width:10px;height:3px;vertical-align:middle;margin:0 4px 0 10px;background:#65d3d4}
+body[data-app=evaluate] .plot-label .recall-key{background:#eca875}
+body[data-app=evaluate] .threshold-plot svg{width:100%;display:block;margin-top:20px;overflow:visible}
+body[data-app=evaluate] .threshold-plot text{font:10px ui-monospace,monospace;fill:#a5bdca}
+body[data-app=evaluate] .gridline{stroke:#36505d;stroke-width:.5}
+body[data-app=evaluate] .precision-line{fill:none;stroke:#65d3d4;stroke-width:2.5}
+body[data-app=evaluate] .recall-line{fill:none;stroke:#eca875;stroke-width:2.5;stroke-dasharray:5 3}
+body[data-app=evaluate] .precision-point{fill:#65d3d4}
+body[data-app=evaluate] .recall-point{fill:#eca875}
+body[data-app=evaluate] .selected-threshold{stroke:#d9e8ef;stroke-dasharray:3 5;opacity:.6}
+body[data-app=evaluate] .matrix{grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+body[data-app=evaluate] .matrix>div{background:#18353b;border:1px solid #315356;color:#c9e8e5;font-size:10px;padding:14px;border-radius:4px}
+body[data-app=evaluate] .matrix>div.error-cell{background:#392e2a;border-color:#5d4539;color:#efccb4}
+body[data-app=evaluate] .matrix strong{font:32px/1.5 ui-monospace,monospace}
+body[data-app=evaluate] .threshold-table{margin:24px 0;padding:16px 0;border-bottom:1px solid var(--line)}
+body[data-app=evaluate] .threshold-table summary{cursor:pointer;font-size:12px}
+body[data-app=evaluate] .empty{border:1px dashed var(--line);min-height:440px;margin-top:24px}
+@media(max-width:900px){body[data-app=evaluate] .workspace{grid-template-columns:230px minmax(0,1fr);gap:20px}body[data-app=evaluate] .matrix{grid-template-columns:1fr 1fr}body[data-app=evaluate] .stat{padding:0 8px}body[data-app=evaluate] .stat strong{font-size:28px}}
+@media(max-width:680px){body[data-app=evaluate] .workspace{display:block}body[data-app=evaluate] .source{border:0;border-bottom:1px solid var(--line);padding:0 0 24px;margin-bottom:24px}body[data-app=evaluate] .threshold-plot{padding:14px 10px}body[data-app=evaluate] .plot-label{flex-wrap:wrap}body[data-app=evaluate] .empty{min-height:230px}}
+body[data-app=evaluate] .source{order:0}
+body[data-app=evaluate] .results{order:1}
+body[data-app=evaluate] .stat strong{overflow-wrap:normal;white-space:nowrap}
+body[data-app=evaluate] .summary{border:0}
+body[data-app=evaluate] .source{grid-column:1;grid-row:1}
+body[data-app=evaluate] .results{grid-column:2;grid-row:1}

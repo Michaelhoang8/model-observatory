@@ -4,6 +4,8 @@ Evaluate binary classifiers with threshold tradeoffs, calibration, costs, and pr
 
 ![Model Observatory preview](docs/app.png)
 
+The evaluation view plots precision and recall at the returned threshold samples, with a marker for the selected threshold and a collapsible exact-value table. Undefined metrics are omitted from the chart. A short chart fade respects reduced-motion preferences.
+
 ## Run
 
 Requires Python 3.11+; no third-party runtime dependencies. Clone this repository and run from its root:
